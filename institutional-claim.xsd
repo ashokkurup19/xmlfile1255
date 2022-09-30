@@ -1,0 +1,162 @@
+<message name="postAccumulatorAdjustment">
+<part element="tns:postAccumulatorAdjustment" name="parameters"> </part>
+</message>
+<message name="ActiveMemberNotFoundException">
+<part element="tns:ActiveMemberNotFoundException" name="fault"> </part>
+</message>
+<message name="postAccumulatorAdjustmentByTypeResponse">
+<part element="tns:postAccumulatorAdjustmentByTypeResponse" name="parameters"> </part>
+</message>
+<message name="UpdateFailedException">
+<part element="tns:UpdateFailedException" name="fault"> </part>
+</message>
+<message name="MemberNotFoundException">
+<part element="tns:MemberNotFoundException" name="fault"> </part>
+</message>
+<message name="getAccumulatorDetailsResponse">
+<part element="tns:getAccumulatorDetailsResponse" name="parameters"> </part>
+</message>
+<message name="postAccumulatorAdjustmentByType">
+<part element="tns:postAccumulatorAdjustmentByType" name="parameters"> </part>
+</message>
+<message name="CreateFailedException">
+<part element="tns:CreateFailedException" name="fault"> </part>
+</message>
+<message name="BenefitPlanTypeNotFoundException">
+<part element="tns:BenefitPlanTypeNotFoundException" name="fault"> </part>
+</message>
+<message name="IllegalServiceArgumentException">
+<part element="tns:IllegalServiceArgumentException" name="fault"> </part>
+</message>
+<message name="getAccumulatorTotalsByMemberHccIdResponse">
+<part element="tns:getAccumulatorTotalsByMemberHccIdResponse" name="parameters"> </part>
+</message>
+<message name="getAccumulatorDetails">
+<part element="tns:getAccumulatorDetails" name="parameters"> </part>
+</message>
+<message name="ReadFailedException">
+<part element="tns:ReadFailedException" name="fault"> </part>
+</message>
+<message name="postAccumulatorAdjustmentResponse">
+<part element="tns:postAccumulatorAdjustmentResponse" name="parameters"> </part>
+</message>
+<message name="SubscriptioNotFoundException">
+<part element="tns:SubscriptioNotFoundException" name="fault"> </part>
+</message>
+<message name="getAccumulatorTotalsByMemberHccId">
+<part element="tns:getAccumulatorTotalsByMemberHccId" name="parameters"> </part>
+</message>
+<portType name="AccumulatorServiceStronglyTypedType">
+</portType>
+<binding name="AccumulatorServiceStronglyTypedTypePortBinding" type="tns:AccumulatorServiceStronglyTypedType">
+<operation name="postAccumulatorAdjustment">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="ReadFailedException">
+<soap:fault name="ReadFailedException" use="literal"/>
+</fault>
+<fault name="SubscriptioNotFoundException">
+<soap:fault name="SubscriptioNotFoundException" use="literal"/>
+</fault>
+<fault name="CreateFailedException">
+<soap:fault name="CreateFailedException" use="literal"/>
+</fault>
+<fault name="IllegalServiceArgumentException">
+<soap:fault name="IllegalServiceArgumentException" use="literal"/>
+</fault>
+<fault name="UpdateFailedException">
+<soap:fault name="UpdateFailedException" use="literal"/>
+</fault>
+<fault name="MemberNotFoundException">
+<soap:fault name="MemberNotFoundException" use="literal"/>
+</fault>
+</operation>
+<operation name="postAccumulatorAdjustmentByType">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="ReadFailedException">
+<soap:fault name="ReadFailedException" use="literal"/>
+</fault>
+<fault name="SubscriptioNotFoundException">
+<soap:fault name="SubscriptioNotFoundException" use="literal"/>
+</fault>
+<fault name="CreateFailedException">
+<soap:fault name="CreateFailedException" use="literal"/>
+</fault>
+<fault name="BenefitPlanTypeNotFoundException">
+<soap:fault name="BenefitPlanTypeNotFoundException" use="literal"/>
+</fault>
+<fault name="IllegalServiceArgumentException">
+<soap:fault name="IllegalServiceArgumentException" use="literal"/>
+</fault>
+<fault name="UpdateFailedException">
+<soap:fault name="UpdateFailedException" use="literal"/>
+</fault>
+<fault name="MemberNotFoundException">
+<soap:fault name="MemberNotFoundException" use="literal"/>
+</fault>
+</operation>
+<operation name="getAccumulatorTotalsByMemberHccId">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="ReadFailedException">
+<soap:fault name="ReadFailedException" use="literal"/>
+</fault>
+<fault name="BenefitPlanTypeNotFoundException">
+<soap:fault name="BenefitPlanTypeNotFoundException" use="literal"/>
+</fault>
+<fault name="ActiveMemberNotFoundException">
+<soap:fault name="ActiveMemberNotFoundException" use="literal"/>
+</fault>
+<fault name="IllegalServiceArgumentException">
+<soap:fault name="IllegalServiceArgumentException" use="literal"/>
+</fault>
+<fault name="MemberNotFoundException">
+<soap:fault name="MemberNotFoundException" use="literal"/>
+</fault>
+</operation>
+<operation name="getAccumulatorDetails">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+<fault name="ReadFailedException">
+<soap:fault name="ReadFailedException" use="literal"/>
+</fault>
+<fault name="BenefitPlanTypeNotFoundException">
+<soap:fault name="BenefitPlanTypeNotFoundException" use="literal"/>
+</fault>
+<fault name="ActiveMemberNotFoundException">
+<soap:fault name="ActiveMemberNotFoundException" use="literal"/>
+</fault>
+<fault name="IllegalServiceArgumentException">
+<soap:fault name="IllegalServiceArgumentException" use="literal"/>
+</fault>
+<fault name="MemberNotFoundException">
+<soap:fault name="MemberNotFoundException" use="literal"/>
+</fault>
+</operation>
+</binding>
+<service name="AccumulatorServiceStronglyTyped">
+<port binding="tns:AccumulatorServiceStronglyTypedTypePortBinding" name="AccumulatorServiceStronglyTypedTypePort">
+</port>
+</service>
+</definitions>
